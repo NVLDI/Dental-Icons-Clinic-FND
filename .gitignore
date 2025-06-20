@@ -20,6 +20,8 @@ src/screens/DeclinedScreen/DeclineScreenBND.js
 src/screens/AcceptedScreen/AcceptedScreenBND.js
 src/navigator/Drawer/DrawerContentBND.js
 
+**/*BND.js
+
 # Expo
 .expo/
 dist/
