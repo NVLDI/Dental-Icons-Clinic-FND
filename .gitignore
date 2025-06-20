@@ -3,6 +3,23 @@
 # dependencies
 node_modules/
 
+# backend files
+src/screens/SignUpScreen/SignupScreenBND.js
+src/screens/SettingScreen/SettingScreenBND.js
+src/screens/ServiceScreen/ServiceScreenBND.js
+src/setting/AcceptedScreen/AcceptedScreenBND.js
+src/setting/ClinicsScreen/ClinicsScreenBND.js
+src/setting/DeclineScreen/DeclineScreenBND.js
+src/setting/FinishScreen/FinishScreenBND.js
+src/setting/FollowUpsScreen/FollowUpsScreenBND.js
+src/screens/ProfileScreen/ProfileScreenBND.js
+src/screens/LoginScreen/LoginScreenBND.js
+src/screens/HomeScreen/HomeScreenBND.js
+src/screens/FollowUpsScreen/FollowUpsScreenBND.js
+src/screens/DeclinedScreen/DeclineScreenBND.js
+src/screens/AcceptedScreen/AcceptedScreenBND.js
+src/navigator/Drawer/DrawerContentBND.js
+
 # Expo
 .expo/
 dist/
