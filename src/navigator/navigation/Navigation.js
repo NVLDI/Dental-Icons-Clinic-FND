@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons, MaterialCommunityIcons } from '@expo/vector-icons';
 import { View, Text, StyleSheet, TouchableOpacity, Modal, Button, Platform, Dimensions, StatusBar } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import styles from './navigationStyle';
 // Importing Calendar and Avatar
 
 import { Avatar } from 'react-native-paper'; // Correct import for Avatar

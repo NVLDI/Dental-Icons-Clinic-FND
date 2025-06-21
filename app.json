@@ -13,15 +13,32 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.sumanbohra.DentalIconsClinic",
+      "icon": "./assets/icon.png",
+      "buildNumber": "2.1.1",
+      "runtimeVersion": "2.1.1",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "Dental Icons Clinic needs access to your photo library to allow uploading images for profiles or clinic details.",
+        "NSSpeechRecognitionUsageDescription": "Dental Icons Clinic uses speech recognition to allow voice-to-text functionality for clinic forms and bookings.",
+        "NSLocationWhenInUseUsageDescription": "Dental Icons Clinic uses your location to connect you with nearby service providers and improve your experience.",
+        "NSLocationAlwaysUsageDescription": "Dental Icons Clinic uses your location even when the app is not active to provide seamless service.",
+        "NSUserTrackingUsageDescription": "Dental Icons Clinic uses your data to provide location-based services and a personalized experience."
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "package": "com.dinesh23.DentalIconsClinicFND"
+      "package": "com.dinesh23.DentalIconsClinicFND",
+      "versionCode": 2,
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"

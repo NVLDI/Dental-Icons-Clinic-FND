@@ -124,18 +124,19 @@ const ServiceScreen = ({ navigation }) => {
             >
               <Ionicons name="close" size={24} color="#333" />
             </TouchableOpacity>
-            {logic.filteredDoctorList.map((doc, idx) => (
-              <TouchableOpacity
-                key={idx}
-                style={styles.listItem}
-                onPress={() => {
-                  logic.setSelectedDoctor(doc);
-                  logic.setModalVisible(false);
-                }}
-              >
-                <Text>{doc.name}</Text>
-              </TouchableOpacity>
-            ))}
+            {Array.isArray(logic.filteredDoctorList) &&
+           logic.filteredDoctorList.map((doc, idx) => (
+    <TouchableOpacity
+      key={idx}
+      style={styles.listItem}
+      onPress={() => {
+        logic.setSelectedDoctor(doc);
+        logic.setModalVisible(false);
+      }}
+    >
+      <Text>{doc.name}</Text>
+    </TouchableOpacity>
+))}
           </View>
         </View>
       </Modal>

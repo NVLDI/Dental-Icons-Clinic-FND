@@ -13,8 +13,26 @@ const ProfileScreen = () => {
     error,
     handleLogout,
     capitalizeEachWord,
-    renderStars,
   } = useProfileLogic();
+  const renderStars = (rating) => {
+  if (typeof rating !== 'number' || isNaN(rating)) {
+    return <Text style={styles.noRatingText}>No rating available</Text>;
+  }
+
+  const stars = Array.from({ length: 5 }, (_, index) => index + 1);
+  return (
+    <View style={styles.starsContainer}>
+      {stars.map((star) => (
+        <Ionicons
+          key={star}
+          name={star <= Math.floor(rating) ? 'star' : 'star-outline'}
+          size={20}
+          color="#f1c40f"
+        />
+      ))}
+    </View>
+  );
+};
 
   if (loading) {
     return (
@@ -47,7 +65,7 @@ const ProfileScreen = () => {
           <Badge>{profile.total_services || 0} Services</Badge>
         </View>
 
-        {renderStars(profile.rating, styles, Ionicons)}
+        {renderStars(profile.rating)}
 
         <TouchableOpacity style={styles.logoutButton} onPress={handleLogout}>
           <Text style={styles.logoutText}>Log Out</Text>
